@@ -2,9 +2,9 @@
 
 This repository contains the research application and graphical user interface (GUI) for **[RetinaConcept-Net](https://github.com/AliGolbaf/retinaconcept-net)**, a concept bottleneck model developed for explainable diabetic retinopathy (DR) grading using colour fundus images.
 
-## ✨ Features
+### ✨ Features
 
-### 1. Overview
+#### 1. Overview
 
 The **Overview** tab provides the main interface for retinal image analysis and diabetic retinopathy (DR) grading.
 
@@ -17,7 +17,7 @@ The **Overview** tab provides the main interface for retinal image analysis and 
 
 ![Overview Tab](screenshots/overview.png)
 
-### 2. Lesion Evidence Explorer
+#### 2. Lesion Evidence Explorer
 
 The **Lesion Evidence Explorer** tab provides spatial and concept-level explanations of RetinaConcept-Net predictions.
 
@@ -37,7 +37,7 @@ The **Lesion Evidence Explorer** tab provides spatial and concept-level explanat
 
 ![Lesion Evidence Explorer](screenshots/lesion_evidence.png)
 
-### 3. Concept Bottleneck Decision Explorer
+#### 3. Concept Bottleneck Decision Explorer
 
 The **Concept Bottleneck Decision Explorer** tab provides an interpretable breakdown of how RetinaConcept-Net reaches its DR grading decision.
 
@@ -51,19 +51,20 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 
 ![Concept Bottleneck Decision Explorer](screenshots/decision_explorer.png)
 
-## 🗂️ Repository files
+### 🗂️ Repository files
 
-retinaconcept-net-gui/
-├── app.py              # Tkinter interface
-├── model_runtime.py    # Checkpoint discovery, inference, and explanations
-├── model_download.py   # Download trained models from Google Drive
-├── models.py           # PyTorch model definitions
-├── requirements.txt    # Python dependencies
-├── run_windows.bat     # Windows launcher
-├── smoke_test.py       # Tests that do not require checkpoints
-├── models/             # Local model checkpoints
-├── azure/              # Azure ttk theme files
-├── screenshots/        # Screenshots of the three application tabs
-├── .gitignore
-└── README.md
+| File / Folder | Description |
+| --- | --- |
+| `app.py` | Main Tkinter graphical user interface |
+| `model_runtime.py` | Model loading, inference, and concept-level explanations |
+| `model_download.py` | Automatic download of trained model checkpoints from Google Drive |
+| `models.py` | Original black-box ResNet-152 and RetinaConcept-Net architectures |
+| `requirements.txt` | Python dependencies |
+| `run_windows.bat` | Windows launcher for the application |
+| `smoke_test.py` | Unit tests that do not require trained model checkpoints |
+| `models/` | Local storage for trained model checkpoints |
+| `azure/` | Azure ttk theme files for the graphical interface |
+| `screenshots/` | Screenshots of the three application tabs |
+| `.gitignore` | Git exclusions for model weights, datasets, and temporary files |
+| `README.md` | Project documentation and installation instructions |
 
