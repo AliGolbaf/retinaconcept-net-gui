@@ -68,13 +68,47 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 | `.gitignore` | Git exclusions for model weights, datasets, and temporary files |
 | `README.md` | Project documentation and installation instructions |
 
-## ⚙️ Installation
+### ⚙️ Installation
 
-### 1. Clone the repository
+#### 1. Clone the repository
 
 Clone the repository and navigate to the project directory:
 
 ```bash
 git clone https://github.com/AliGolbaf/retinaconcept-net-gui.git
 cd retinaconcept-net-gui
+```
 
+#### 2. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+#### 3. Launch the application
+
+Windows:
+
+```bash
+run_windows.bat
+```
+
+Linux / macOS:
+
+```bash
+python3 app.py
+```
+
+#### 4. Download trained models
+
+On the first launch, the application automatically checks for trained model checkpoints in the `models/` directory.
+
+If the checkpoints are missing, the application offers to download them from Google Drive (448 MB in total).
+
+Alternatively, download the checkpoints manually:
+
+```bash
+python model_download.py
+```
+
+Once the models are loaded, import a colour fundus photograph and select **Run retinal analysis**.
