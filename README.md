@@ -35,7 +35,7 @@ The **Lesion Evidence Explorer** tab provides spatial and concept-level explanat
 
 **Note:** The heatmaps represent learned spatial evidence rather than validated pixel-level lesion segmentations.
 
-![Lesion Evidence Explorer](screenshots/lesion_evidence.png)
+![Lesion Evidence Explorer](screenshots/lesion_evidence_01.png)
 
 #### 3. Concept Bottleneck Decision Explorer
 
