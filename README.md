@@ -2,7 +2,7 @@
 
 This repository contains the research application and graphical user interface (GUI) for **[RetinaConcept-Net](https://github.com/AliGolbaf/retinaconcept-net)**, a concept bottleneck model developed for explainable diabetic retinopathy (DR) grading using colour fundus images.
 
-## Features
+## ✨ Features
 
 ### 1. Overview
 
@@ -51,53 +51,7 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 
 ![Concept Bottleneck Decision Explorer](screenshots/decision_explorer.png)
 
-## Requirements
-
-- Python **3.10 or newer**.
-- NumPy, Pillow, PyTorch and torchvision, as specified in `requirements.txt`.
-- **Tkinter**, which is normally included in Python for Windows; on some Linux distributions, install the system's `python3-tk` package separately.
-- A genuine, architecture-compatible PyTorch checkpoint for each model you wish to run.
-
-The initial download and installation of PyTorch dependencies may be substantial. A CUDA-enabled installation is optional; the app can run on CPU.
-
-## Quick start (Windows)
-
-Open PowerShell in the repository folder and run:
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\run_windows.bat
-```
-
-After installation, double-click `run_windows.bat` for subsequent launches. The launcher uses `.venv` if it exists, or your system Python otherwise.
-
-On macOS or Linux, use the corresponding virtual environment commands and launch with `python app.py`:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python app.py
-```
-
-## Model checkpoints
-
-Place your trained state-dictionary checkpoints in `models/` using the recommended filenames:
-
-```text
-models/
-├── best_model.pt       # black-box ResNet-152
-└── best_cbm_model.pt   # RetinaConcept-Net
-```
-
-The app attempts to load these automatically on startup. If they are added later, use **Reload models folder**. Alternatively, click **Load…** for a model and select a `.pt` or `.pth` checkpoint from anywhere on your computer. Manual loading also works when `models/` is empty.
-
-The loader recognises certain alternative filenames, but it requires an unambiguous match per model type and does not select between multiple folds automatically. Checkpoints must be compatible with the architecture in `models.py` and be state dictionaries; the app does not download model weights.
-
-You can open the interface without weights, but model inference remains unavailable until at least one checkpoint loads successfully. The black-box classifier and the concept bottleneck model can be used separately.
-
-## Repository structure
+## 🗂️ Repository files
 
 ```text
 retinaconcept-net-gui/
@@ -107,12 +61,10 @@ retinaconcept-net-gui/
 ├── requirements.txt    # Python dependencies
 ├── run_windows.bat     # Windows launcher
 ├── smoke_test.py       # tests that do not require checkpoints
-├── models/             # local checkpoints; ignored by Git
+├── models/             # local checkpoints
 ├── .gitignore
 └── README.md
 ```
-
-The interface optionally uses the **Azure ttk theme** when `azure/azure.tcl` and its companion files are present. This optional third-party theme is **not included** in this repository. Without it, the application uses its built-in fallback theme; some controls may look different from a themed local installation.
 
 ## Check the project
 
