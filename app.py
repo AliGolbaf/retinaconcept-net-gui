@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""RetinaXAI — local research desktop for explainable diabetic retinopathy.
+"""
+RetinaConcept-Net GUI — a research application for explainable diabetic
+    retinopathy grading using colour fundus photographs.
+GitHub: https://github.com/AliGolbaf/retinaconcept-net
 Written by: Ali Golbaf (ali.golbaf71@gmail.com)
 """
 
