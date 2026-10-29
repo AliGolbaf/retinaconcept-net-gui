@@ -15,7 +15,7 @@ The **Overview** tab provides the main interface for retinal image analysis and 
 - Display predicted DR grades and their corresponding classification scores.
 - Compare predictions from the black-box classifier and RetinaConcept-Net.
 
-![Overview Tab](screenshots/1.png)
+![Overview Tab](screenshots/overview.png)
 
 ### 2. Lesion Evidence Explorer
 
@@ -35,7 +35,7 @@ The **Lesion Evidence Explorer** tab provides spatial and concept-level explanat
 
 **Note:** The heatmaps represent learned spatial evidence rather than validated pixel-level lesion segmentations.
 
-![Lesion Evidence Explorer](screenshots/2.png)
+![Lesion Evidence Explorer](screenshots/lesion_evidence.png)
 
 ### 3. Concept Bottleneck Decision Explorer
 
@@ -49,7 +49,7 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 
 **Note:** The what-if analysis modifies the inputs to the trained grading classifier without rerunning the image-based concept extractor. These experiments demonstrate model sensitivity rather than causal or clinical effects.
 
-![Concept Bottleneck Decision Explorer](screenshots/3.png)
+![Concept Bottleneck Decision Explorer](screenshots/decision_explorer.png)
 
 ## Requirements
 
