@@ -37,6 +37,7 @@ The **Lesion Evidence Explorer** tab provides spatial and concept-level explanat
 
 ![Lesion Evidence Explorer](screenshots/lesion_evidence_01.png)
 
+![Lesion Evidence Explorer](screenshots/lesion_evidence_02.png)
 #### 3. Concept Bottleneck Decision Explorer
 
 The **Concept Bottleneck Decision Explorer** tab provides an interpretable breakdown of how RetinaConcept-Net reaches its DR grading decision.
