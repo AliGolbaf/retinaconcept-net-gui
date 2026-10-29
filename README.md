@@ -1,10 +1,6 @@
 # RetinaConcept-Net GUI
 
-Desktop research interface for **RetinaConcept-Net**, a concept bottleneck model for explainable diabetic retinopathy (DR) grading from colour fundus photographs. The application also supports a black-box ResNet-152 classifier for comparison.
-
-**Author:** Ali Golbaf  
-**Application version:** 1.4  
-**Purpose:** Research and demonstration only — **not** a medical device or a tool for clinical diagnosis.
+This repository contains the research application and graphical user interface (GUI) for **[RetinaConcept-Net](https://github.com/AliGolbaf/retinaconcept-net)**, a concept bottleneck model developed for explainable diabetic retinopathy (DR) grading using colour fundus images.
 
 ## Features
 
