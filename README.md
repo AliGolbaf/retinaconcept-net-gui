@@ -53,36 +53,17 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 
 ## 🗂️ Repository files
 
-```text
 retinaconcept-net-gui/
 ├── app.py              # Tkinter interface
-├── model_runtime.py    # checkpoint discovery, inference, and explanations
+├── model_runtime.py    # Checkpoint discovery, inference, and explanations
+├── model_download.py   # Download trained models from Google Drive
 ├── models.py           # PyTorch model definitions
 ├── requirements.txt    # Python dependencies
 ├── run_windows.bat     # Windows launcher
-├── smoke_test.py       # tests that do not require checkpoints
-├── models/             # local checkpoints
+├── smoke_test.py       # Tests that do not require checkpoints
+├── models/             # Local model checkpoints
+├── azure/              # Azure ttk theme files
+├── screenshots/        # Screenshots of the three application tabs
 ├── .gitignore
 └── README.md
-```
 
-## Check the project
-
-Run these tests after installing NumPy:
-
-```bash
-python -m unittest smoke_test -v
-```
-
-The tests cover checkpoint discovery, numerical probability calculations, and the exact reconstruction of the linear classifier's logit margin. They do **not** check trained-model accuracy or load checkpoints.
-
-## Interpretation and limitations
-
-- Classification scores are softmax outputs, **not calibrated clinical probabilities**.
-- Spatial concept maps are model evidence activations, **not validated lesion segmentations**.
-- The *what-if* controls evaluate the trained linear grading head using modified concept values; they do not rerun the image model and do not support causal or clinical intervention claims.
-- Any real-world use requires independent clinical and external validation, appropriate governance, and regulatory assessment.
-
-## Licence
-
-Copyright © 2026 Ali Golbaf. No open-source licence has yet been specified; permission to reuse or redistribute the code is not implied by public availability. Choose and add a `LICENSE` file before inviting outside contributions or reuse.
