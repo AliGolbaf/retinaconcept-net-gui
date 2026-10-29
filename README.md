@@ -68,3 +68,13 @@ The **Concept Bottleneck Decision Explorer** tab provides an interpretable break
 | `.gitignore` | Git exclusions for model weights, datasets, and temporary files |
 | `README.md` | Project documentation and installation instructions |
 
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/AliGolbaf/retinaconcept-net-gui.git
+cd retinaconcept-net-gui
+
