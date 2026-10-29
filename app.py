@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """RetinaXAI — local research desktop for explainable diabetic retinopathy.
-
-Launch: python app.py
-Models: supply the genuine fold checkpoints from the training pipeline.
+Written by: Ali Golbaf (ali.golbaf71@gmail.com)
 """
 
 from __future__ import annotations
