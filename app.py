@@ -237,7 +237,7 @@ class RetinaXAI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.azure_loaded = self._initialise_azure_theme()
-        self.title(f"RetinalConcept-Net v{APP_VERSION} | Explainable Diabetic Retinopathy Assessment")
+        self.title(f"RetinaConcept-Net v{APP_VERSION} | Explainable Diabetic Retinopathy Assessment")
         self.geometry("1420x880")
         self.minsize(1080, 680)
         self.configure(background=COLORS["bg"])
@@ -307,7 +307,7 @@ class RetinaXAI(tk.Tk):
 
         identity = tk.Frame(header, background=COLORS["sidebar"])
         identity.pack(side="left", fill="y", pady=13)
-        label(identity, "RetinalConcept-Net", size=21, bold=True, bg=COLORS["sidebar"]).pack(anchor="w")
+        label(identity, "RetinaConcept-Net", size=21, bold=True, bg=COLORS["sidebar"]).pack(anchor="w")
         label(identity, "Transparent retinal AI  •  Research interface", size=10,
               color="muted", bg=COLORS["sidebar"]).pack(anchor="w")
         tk.Label(header, text="RESEARCH USE ONLY", foreground=COLORS["teal"],
@@ -703,7 +703,7 @@ class RetinaXAI(tk.Tk):
             except Exception as error:
                 self.pending.put((task, False, str(error)))
 
-        threading.Thread(target=worker, daemon=True, name=f"RetinalConcept-Net-{task}").start()
+        threading.Thread(target=worker, daemon=True, name=f"RetinaConcept-Net-{task}").start()
 
     def _poll_workers(self):
         try:
@@ -714,7 +714,7 @@ class RetinaXAI(tk.Tk):
                 self.progress.pack_forget()
                 if not success:
                     self.status_var.set(f"{task.capitalize()} failed")
-                    messagebox.showerror("RetinalConcept-Net", str(payload), parent=self)
+                    messagebox.showerror("RetinaConcept-Net", str(payload), parent=self)
                 elif task == "autoload":
                     self.engine = payload["engine"]
                     for kind in ("blackbox", "cbm"):
@@ -932,7 +932,7 @@ class RetinaXAI(tk.Tk):
                                                     filetypes=[("JSON", "*.json")])
         if not destination:
             return
-        payload = {"application": "RetinalConcept-Net", "research_use_only": True,
+        payload = {"application": "RetinaConcept-Net", "research_use_only": True,
                    "image_filename": self.image_name, "grade_labels": list(GRADE_NAMES),
                    "model_outputs": {}}
         for kind, result in self.results.items():
