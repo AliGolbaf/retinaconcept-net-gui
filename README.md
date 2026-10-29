@@ -99,7 +99,7 @@ Linux / macOS:
 python3 app.py
 ```
 
-#### Download trained models
+#### 4. Download trained models
 
 On the first launch, the application automatically checks for trained model checkpoints in the `models/` directory.
 
